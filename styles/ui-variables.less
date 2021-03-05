@@ -4,7 +4,7 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 */
 @import "base/ui-variables";
 
-@gray-base: #ffffff;
+// @gray-base: #0e0d0d;
 // @gray-darker: darken(@gray-base, 13.5%);
 // @gray-dark: darken(@gray-base, 20%);
 // @gray: darken(@gray-base, 33.5%);
@@ -12,30 +12,30 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 // @gray-lighter: darken(@gray-base, 92.5%);
 // @white: #0a0a0a;
 
-@accent-primary: #67a3d9;
-// @accent-primary-dark: darken(@accent-primary, 10%);
+@accent-primary: #f6d2e0;
+@accent-primary-dark: lighten (@accent-primary, 60%);
 
-@background-primary: #f6d2e0;
+@background-primary: #fafafa;
 @background-off-primary: #f6d2e0;
-@background-secondary: #67a3d9;
-@background-tertiary: #0671b7;
+@background-secondary: #c8e7f5;
+@background-tertiary: #f8b7cd;
 
 // @border-color-primary: lighten(@background-primary, 10%);
 // @border-color-secondary: lighten(@background-secondary, 10%);
 // @border-color-tertiary: lighten(@background-tertiary, 10%);
 // @border-color-divider: @border-color-secondary;
 
-@text-color: rgb(20, 2, 2);
-// @text-color-subtle: fadeout(@text-color, 20%);
-// @text-color-very-subtle: fadeout(@text-color, 40%);
-// @text-color-inverse: white;
-// @text-color-inverse-subtle: fadeout(@text-color-inverse, 20%);
-// @text-color-inverse-very-subtle: fadeout(@text-color-inverse, 50%);
-// @text-color-heading: #fff;
+@text-color: rgb(8, 0, 0);
+@text-color-subtle: (@text-color, 10%);
+@text-color-very-subtle: (@text-color, 10%);
+@text-color-inverse: rgb(12, 11, 11);
+@text-color-inverse-subtle: (@text-color-inverse, 20%);
+@text-color-inverse-very-subtle: (@text-color-inverse, 20%);
+@text-color-heading: rgb(20, 2, 2);
 
-// @text-color-link: @accent-primary;
-// @text-color-link-hover: @accent-primary-dark;
-// @text-color-link-active: @accent-primary-dark;
+@text-color-link: @accent-primary;
+@text-color-link-hover: #121212;
+@text-color-link-active: @accent-primary-dark;
 
 // @btn-default-bg-color: lighten(@background-primary, 5%);
 // @dropdown-default-bg-color: #404040;
@@ -43,10 +43,12 @@ https://github.com/Foundry376/Mailspring/blob/master/app/static/style/base/ui-va
 // @input-bg: #2e2e2e;
 // @input-border: @border-color-divider;
 
-// @list-bg: #333;
-// @list-border: #383838;
-// @list-selected-color: @text-color-inverse;
-// @list-focused-color: @text-color;
+@list-bg: #f6d2e0;
+@list-border: #f6d2e0;
+@list-selected-color: #f6d2e0;
+@list-focused-color: #f6d2e0;
+@list-not-focused-color: #f6d2e0;
+// @list-selected-not-focused-bg: #f6d2e0; TODO: Change non focused
 
-// @toolbar-background-color: #121212;
-// @panel-background-color: #121212;
+@toolbar-background-color: #121212;
+@panel-background-color: #f6d2e0;
